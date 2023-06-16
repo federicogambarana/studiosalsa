@@ -3,6 +3,16 @@ body {
    /* cursor: url(img/cursor_s.png), auto;*/
 }
 
+@font-face {
+  font-family: "ApfelGrotezk";
+  src: url("font/ApfelGrotezk-Brukt.woff2") format("woff2"),
+       url("font/ApfelGrotezk-Brukt.woff") format("woff"),
+       url("font/ApfelGrotezk-Fett.woff2") format("woff2"),
+       url("font/ApfelGrotezk-Fett.woff") format("woff"),
+       url("font/ApfelGrotezk-Regular.woff2") format("woff2"),
+       url("font/ApfelGrotezk-Regular.woff") format("woff");
+}
+
 #header_main{
    width: 100%;
    height: auto;
@@ -24,7 +34,7 @@ body {
 }
 
 .header_p{
-    font-family: sans-serif;
+    font-family: "ApfelGrotezk-Regular";
     font-size: 2em;
 }
 
@@ -48,7 +58,7 @@ a:hover{
     justify-content: center;
 }
 
-.landing_logo{
+/*  .landing_logo{
       position: absolute;
     z-index: 1;
     display: flex;
@@ -57,6 +67,18 @@ a:hover{
     text-transform: uppercase;
   top: 50%;
   transform: translateY(-50%);
+}  */
+
+.landing_logo{
+      position: absolute;
+    z-index: 1;
+    display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+} 
+
+.logotext {
+    width: 20rem;
 }
 
 .video_div{
@@ -64,12 +86,33 @@ a:hover{
     z-index: 1;
     display: flex;
     text-transform: uppercase;
-  top: 55%;
-  transform: translateY(-55%);
+  top: 50%;
+  transform: translateY(-50%);
    height: 24em;
 }
 
 .video_home{
+}
+
+.footer_left{
+     display: block;
+     padding-left: 2em;
+     position: absolute;
+    z-index: 2;
+     bottom: 1%;
+    width: 35%;
+     left: 0;
+}
+
+.statement{
+    font-family: "ApfelGrotezk-Regular";
+    font-size: 2.3em;
+    line-height: 1.2em;
+}
+
+.red{
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 canvas {
@@ -115,6 +158,10 @@ canvas {
   top: 50%;
   transform: translateY(-50%);
 }
+    
+    .logotext {
+    width: 28rem;
+}
 
     
 .video_div{
@@ -122,15 +169,23 @@ canvas {
     z-index: 1;
     display: flex;
     text-transform: uppercase;
-  top: 55%;
-  transform: translateY(-55%);
-   height: 38em;
-
+  top: 50%;
+  transform: translateY(-50%);
+   height: 42em;
+}
+    
+    .footer_left{
+     padding-left: 4em;
+     width: 90%;
+     bottom: 0;
+}
+    
+    .statement{
+    font-family: "ApfelGrotezk-Regular";
+    font-size: 4.2em;
+    line-height: 1.2em;
 }
 
-.video_home{
-  
-}
 
     
 }
